@@ -1,19 +1,19 @@
-import { Component } from '@angular/core';
-import { RouterLink } from '@angular/router';
-import { RouteMeta } from '@analogjs/router';
+import { Component } from "@angular/core";
+import { RouterLink } from "@angular/router";
+import { RouteMeta } from "@analogjs/router";
 import {
   advisoryBoard,
   team,
   type GovernancePerson,
-} from '../../about/governance-people';
+} from "../../about/governance-people";
 
 export const routeMeta: RouteMeta = {
-  title: 'Governance',
+  title: "Governance",
   meta: [
     {
-      name: 'description',
+      name: "description",
       content:
-        'How the OpenNG Foundation governs projects, onboard maintainers, and shares maintenance across the Angular community.',
+        "How the OpenNG Foundation governs projects, onboard maintainers, and shares maintenance across the Angular community.",
     },
   ],
 };
@@ -37,8 +37,8 @@ export const routeMeta: RouteMeta = {
       <div class="space-y-4">
         <h2 class="text-2xl font-semibold">Community hub, not a takeover</h2>
         <p class="text-base-content/80 leading-7">
-          OpenNG was formed because open-source maintenance should not depend
-          on one person carrying a project alone. We operate as a community
+          OpenNG was formed because open-source maintenance should not depend on
+          one person carrying a project alone. We operate as a community
           organization, sharing responsibility for the projects we maintain and
           directing support where it is needed most.
         </p>
@@ -59,7 +59,10 @@ export const routeMeta: RouteMeta = {
         <p class="text-base-content/80 leading-7">
           Our current focus is revived libraries. New project proposals are
           upcoming, requirements differ by scenario. See
-          <a class="link link-primary" routerLink="/community/maintainer-candidates">
+          <a
+            class="link link-primary"
+            routerLink="/community/maintainer-candidates"
+          >
             maintainer candidates
           </a>
           for the full process and expectations.
@@ -82,11 +85,10 @@ export const routeMeta: RouteMeta = {
       <div class="space-y-4">
         <h2 class="text-2xl font-semibold">Transparency and continuity</h2>
         <p class="text-base-content/80 leading-7">
-          When organizations or repositories vanish without warning,
-          downstream teams lose visibility and stability. OpenNG aims to provide
-          a durable home where project history, issues, and releases stay
-          accessible, and where projects can transfer without disrupting the
-          ecosystem.
+          When organizations or repositories vanish without warning, downstream
+          teams lose visibility and stability. OpenNG aims to provide a durable
+          home where project history, issues, and releases stay accessible, and
+          where projects can transfer without disrupting the ecosystem.
         </p>
       </div>
 
@@ -102,16 +104,16 @@ export const routeMeta: RouteMeta = {
             <div
               class="flex flex-col items-center gap-3 rounded-box border border-base-300 bg-base-100 px-4 py-6 text-center"
             >
-              <div class="avatar avatar-placeholder">
-                <div
-                  class="flex w-20 items-center justify-center rounded-full bg-primary/10 text-lg font-medium text-primary"
-                >
-                  {{ initials(person.name) }}
+              <div class="avatar">
+                <div class="w-20 rounded-full">
+                  <img [src]="person.avatar" />
                 </div>
               </div>
               <div>
                 <div class="font-semibold">{{ person.name }}</div>
-                <div class="text-sm text-base-content/70">{{ person.role }}</div>
+                <div class="text-sm text-base-content/70">
+                  {{ person.role }}
+                </div>
               </div>
             </div>
           }
@@ -130,17 +132,34 @@ export const routeMeta: RouteMeta = {
             <div
               class="flex flex-col items-center gap-3 rounded-box border border-base-300 bg-base-100 px-4 py-6 text-center"
             >
-              <div class="avatar avatar-placeholder">
-                <div
-                  class="flex w-20 items-center justify-center rounded-full bg-secondary/10 text-lg font-medium text-secondary"
-                >
-                  {{ initials(person.name) }}
+              <div class="avatar">
+                <div class="w-20 rounded-full">
+                  <img [src]="person.avatar" />
                 </div>
               </div>
               <div>
                 <div class="font-semibold">{{ person.name }}</div>
-                <div class="text-sm text-base-content/70">{{ person.role }}</div>
+                <div class="text-sm text-base-content/70">
+                  {{ person.role }}
+                </div>
               </div>
+            </div>
+          } @empty {
+            <div
+              class="flex flex-col items-center gap-6 sm:col-span-2 lg:col-span-3"
+            >
+              <div class="grid w-full gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                @for (slot of advisoryBoardPlaceholders; track slot) {
+                  <div
+                    class="flex flex-col items-center gap-3 rounded-box border border-dashed border-base-300 bg-base-100 px-4 py-6 text-center"
+                  >
+                    <div class="h-20 w-20 rounded-full bg-base-300"></div>
+                    <div class="h-4 w-24 rounded-box bg-base-300"></div>
+                    <div class="h-3 w-16 rounded-box bg-base-300"></div>
+                  </div>
+                }
+              </div>
+              <p class="text-base-content/70">To be announced</p>
             </div>
           }
         </div>
@@ -170,12 +189,13 @@ export const routeMeta: RouteMeta = {
 export default class GovernancePage {
   readonly team = team;
   readonly advisoryBoard = advisoryBoard;
+  readonly advisoryBoardPlaceholders = [0, 1, 2];
 
-  initials(name: GovernancePerson['name']): string {
+  initials(name: GovernancePerson["name"]): string {
     return name
       .split(/\s+/)
       .map((part) => part[0])
-      .join('')
+      .join("")
       .slice(0, 2)
       .toUpperCase();
   }
