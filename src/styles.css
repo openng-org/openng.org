@@ -1,5 +1,54 @@
 @import 'tailwindcss';
 @plugin "daisyui";
+@import 'prismjs/themes/prism.css';
+
+@theme {
+  --font-montserrat: Montserrat, ui-sans-serif, system-ui, sans-serif;
+}
+
+.blog-content :is(h2, h3, h4) {
+  @apply mt-8 mb-3 font-semibold;
+}
+
+.blog-content h2 {
+  @apply text-2xl;
+}
+
+.blog-content h3 {
+  @apply text-xl;
+}
+
+.blog-content p {
+  @apply mb-4;
+}
+
+.blog-content a {
+  @apply link link-primary;
+}
+
+.blog-content ul {
+  @apply mb-4 list-disc pl-6;
+}
+
+.blog-content ol {
+  @apply mb-4 list-decimal pl-6;
+}
+
+/* Close horizontal menu dropdowns when focus and hover leave the details element */
+.navbar .menu-horizontal > li > details[open]:not(:focus-within):not(:hover) > ul {
+  opacity: 0;
+  scale: 95%;
+  pointer-events: none;
+}
+
+.navbar .menu-horizontal > li > details[open]:not(:focus-within):not(:hover) > summary::after {
+  translate: 0 -1px;
+  rotate: -135deg;
+}
+
+.navbar .menu-horizontal > li > details[open]:not(:focus-within):not(:hover)::details-content {
+  block-size: 0;
+}
 
 /* You can add global styles to this file, and also import other style files */
 :root {
