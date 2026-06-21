@@ -1,5 +1,7 @@
 @import 'tailwindcss';
-@plugin "daisyui";
+@plugin "daisyui" {
+  themes: light --default;
+}
 @import 'prismjs/themes/prism.css';
 
 @theme {
