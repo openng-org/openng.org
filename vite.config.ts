@@ -1,7 +1,7 @@
 /// <reference types="vitest" />
 
 import { defineConfig } from 'vite';
-import analog from '@analogjs/platform';
+import analog, { type PrerenderContentFile } from '@analogjs/platform';
 import tailwindcss from '@tailwindcss/vite';
 
 // https://vitejs.dev/config/
@@ -16,8 +16,25 @@ export default defineConfig(({ mode }) => ({
     analog({
       ssr: false,
       static: true,
+      content: {
+        highlighter: 'prism',
+      },
       prerender: {
-        routes: [],
+        routes: async () => [
+          '/',
+          '/blog',
+          {
+            contentDir: 'src/content/posts',
+            transform: (file: PrerenderContentFile) => {
+              if (file.attributes.draft) {
+                return false;
+              }
+
+              const slug = file.attributes.slug || file.name;
+              return `/blog/${slug}`;
+            },
+          },
+        ],
       },
     }),
     tailwindcss()
