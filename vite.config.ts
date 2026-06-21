@@ -25,7 +25,20 @@ export default defineConfig(({ mode }) => ({
       prerender: {
         routes: async () => [
           '/',
+          '/about',
+          '/about/contact',
+          '/about/governance',
+          '/about/history',
+          '/about/qa',
           '/blog',
+          '/community/get-involved',
+          '/community/maintainer-candidates',
+          '/community/partnerships',
+          '/community/project-intake',
+          '/community/security',
+          '/community/standards',
+          '/community/sustainability',
+          '/projects',
           {
             contentDir: 'src/content/posts',
             transform: (file: PrerenderContentFile) => {
