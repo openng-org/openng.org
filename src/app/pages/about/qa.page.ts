@@ -68,11 +68,6 @@ export default class QaPage {
         'Not without standards. Over the years, many projects have asked for promotion, but a lot lack basic open-source quality, tests, CI, documentation, and responsible maintenance. We plan to publish clear guidelines before promoting projects beyond those we directly maintain.',
     },
     {
-      question: 'Will you seek sponsors?',
-      answer:
-        'Yes, eventually. Acting as a community hub rather than a single-person organization should make it easier to attract sponsors. We aim to use that support for governance costs and to fund bounties that help with maintenance where it is needed most.',
-    },
-    {
       question: 'Will we support AngularJS projects?',
       answer:
         'No, as AngularJS support has officially ended as of January 2022.',
@@ -80,7 +75,7 @@ export default class QaPage {
     {
       question: 'Which Angular versions will you support?',
       answer:
-        'As soon as we take the lead on an abandoned project, a new version will be released for the latest major version. There is no intent to fill the gap between the last major Angular version the project supported and the current latest one available. After that, we will follow the same support policy as Angular for the three latest versions.',
+        'As soon as we take the lead on an abandoned project, a new version will be released for the latest major version. There is no intent to fill the gap between the last major Angular version the project supported and the current latest one available. After that, we will follow the same support policy as Angular.',
     },
   ];
 }
