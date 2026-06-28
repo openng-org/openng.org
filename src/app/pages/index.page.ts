@@ -6,10 +6,15 @@ import { lucideGithub } from '@ng-icons/lucide';
 import { HlmButtonImports } from '@spartan-ng/helm/button';
 import { HlmCardImports } from '@spartan-ng/helm/card';
 import { PageHeroComponent } from '../components/page-hero';
-import {
-  PageTimelineComponent,
-  type PageTimelineItem,
-} from '../components/page-timeline';
+
+interface Priority {
+  title: string;
+  description: string;
+  link?: {
+    label: string;
+    routerLink: string;
+  };
+}
 
 export const routeMeta: RouteMeta = {
   title: 'OpenNG Foundation',
@@ -29,7 +34,6 @@ export const routeMeta: RouteMeta = {
     HlmButtonImports,
     HlmCardImports,
     PageHeroComponent,
-    PageTimelineComponent,
   ],
   providers: [provideIcons({ lucideGithub })],
   template: `
@@ -126,15 +130,32 @@ export const routeMeta: RouteMeta = {
           </p>
         </div>
 
-        <div class="mt-12">
-          <app-page-timeline [items]="priorityTimeline" />
-        </div>
+        <ol class="mx-auto mt-12 flex max-w-2xl list-decimal flex-col gap-6 pl-6">
+          @for (item of priorities; track item.title) {
+            <li class="ps-2">
+              <h3 class="font-semibold">{{ item.title }}</h3>
+              <p class="mt-1 text-muted-foreground leading-7">
+                {{ item.description }}
+              </p>
+              @if (item.link) {
+                <a
+                  hlmBtn
+                  variant="link"
+                  class="mt-1 h-auto px-0"
+                  [routerLink]="item.link.routerLink"
+                >
+                  {{ item.link.label }}
+                </a>
+              }
+            </li>
+          }
+        </ol>
       </div>
     </section>
   `,
 })
 export default class Home {
-  readonly priorityTimeline: PageTimelineItem[] = [
+  readonly priorities: Priority[] = [
     {
       title: 'Foundation and first cohort',
       description:
