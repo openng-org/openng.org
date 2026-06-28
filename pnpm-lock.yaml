@@ -41,12 +41,24 @@ importers:
       '@angular/router':
         specifier: ^22.0.0
         version: 22.0.2(@angular/common@22.0.2(@angular/core@22.0.2(@angular/compiler@22.0.2)(rxjs@7.8.2))(rxjs@7.8.2))(@angular/core@22.0.2(@angular/compiler@22.0.2)(rxjs@7.8.2))(@angular/platform-browser@22.0.2(@angular/animations@22.0.2(@angular/core@22.0.2(@angular/compiler@22.0.2)(rxjs@7.8.2)))(@angular/common@22.0.2(@angular/core@22.0.2(@angular/compiler@22.0.2)(rxjs@7.8.2))(rxjs@7.8.2))(@angular/core@22.0.2(@angular/compiler@22.0.2)(rxjs@7.8.2)))(rxjs@7.8.2)
+      '@ng-icons/core':
+        specifier: '>=32.0.0 <34.0.0'
+        version: 33.3.0(@angular-devkit/schematics@22.0.3(chokidar@5.0.0))(@angular/common@22.0.2(@angular/core@22.0.2(@angular/compiler@22.0.2)(rxjs@7.8.2))(rxjs@7.8.2))(@angular/core@22.0.2(@angular/compiler@22.0.2)(rxjs@7.8.2))(@schematics/angular@22.0.3(chokidar@5.0.0))(rxjs@7.8.2)
+      '@ng-icons/lucide':
+        specifier: '>=32.0.0 <34.0.0'
+        version: 33.3.0
       '@spartan-ng/brain':
         specifier: ^1.0.2
         version: 1.0.2(54e17a8b84c8e0941cbf40bdc65de648)
       '@tailwindcss/vite':
         specifier: ^4.1.4
         version: 4.3.1(vite@8.0.16(@types/node@26.0.1)(esbuild@0.28.1)(jiti@2.7.0)(less@4.5.1)(sass-embedded@1.100.0)(sass@1.99.0)(terser@5.48.0)(yaml@2.9.0))
+      class-variance-authority:
+        specifier: ^0.7.0
+        version: 0.7.1
+      clsx:
+        specifier: ^2.1.1
+        version: 2.1.1
       front-matter:
         specifier: ^4.0.2
         version: 4.0.2
@@ -1950,6 +1962,18 @@ packages:
       '@emnapi/core': ^1.7.1
       '@emnapi/runtime': ^1.7.1
 
+  '@ng-icons/core@33.3.0':
+    resolution: {integrity: sha512-rGfOR4bj07jhWEErabq9VX+PqoS0qiA/1FarLdX5qZ9h5MsbuNpwBKlSGe+W3+b0NSZ5tbqlqv83YMjUG2WAfg==}
+    peerDependencies:
+      '@angular-devkit/schematics': '>=21.0.0'
+      '@angular/common': '>=21.0.0'
+      '@angular/core': '>=21.0.0'
+      '@schematics/angular': '>=21.0.0'
+      rxjs: ^6.5.3 || ^7.4.0
+
+  '@ng-icons/lucide@33.3.0':
+    resolution: {integrity: sha512-glSPyLcuD4UjzjsIVqZscimcNRayuybvS4t92UfdkTKS70t/hlly1qCgLCiTBVtFOsnWY8XkOuslgX9Fnjlzyw==}
+
   '@nodelib/fs.scandir@2.1.5':
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
     engines: {node: '>= 8'}
@@ -3764,6 +3788,9 @@ packages:
 
   citty@0.2.2:
     resolution: {integrity: sha512-+6vJA3L98yv+IdfKGZHBNiGW5KHn22e/JwID0Strsz8h4S/csAu/OuICwxrg44k5MRiZHWIo8XXuJgQTriRP4w==}
+
+  class-variance-authority@0.7.1:
+    resolution: {integrity: sha512-Ka+9Trutv7G8M6WT6SeiRWz792K5qEqIGEGzXKhAE6xOWAY6pPH8U+9IY3oCMv6kqTmLsv7Xh/2w2RigkePMsg==}
 
   cli-cursor@3.1.0:
     resolution: {integrity: sha512-I/zHAwsKf9FqGoXM4WWRACob9+SNukZTd94DWF57E4toouRulbCxcUh6RKUEOQlYTHJnzkPMySvPNaaSLNfLZw==}
@@ -9433,6 +9460,19 @@ snapshots:
       '@tybys/wasm-util': 0.10.2
     optional: true
 
+  '@ng-icons/core@33.3.0(@angular-devkit/schematics@22.0.3(chokidar@5.0.0))(@angular/common@22.0.2(@angular/core@22.0.2(@angular/compiler@22.0.2)(rxjs@7.8.2))(rxjs@7.8.2))(@angular/core@22.0.2(@angular/compiler@22.0.2)(rxjs@7.8.2))(@schematics/angular@22.0.3(chokidar@5.0.0))(rxjs@7.8.2)':
+    dependencies:
+      '@angular-devkit/schematics': 22.0.3(chokidar@5.0.0)
+      '@angular/common': 22.0.2(@angular/core@22.0.2(@angular/compiler@22.0.2)(rxjs@7.8.2))(rxjs@7.8.2)
+      '@angular/core': 22.0.2(@angular/compiler@22.0.2)(rxjs@7.8.2)
+      '@schematics/angular': 22.0.3(chokidar@5.0.0)
+      rxjs: 7.8.2
+      tslib: 2.8.1
+
+  '@ng-icons/lucide@33.3.0':
+    dependencies:
+      tslib: 2.8.1
+
   '@nodelib/fs.scandir@2.1.5':
     dependencies:
       '@nodelib/fs.stat': 2.0.5
@@ -11374,6 +11414,10 @@ snapshots:
       consola: 3.4.2
 
   citty@0.2.2: {}
+
+  class-variance-authority@0.7.1:
+    dependencies:
+      clsx: 2.1.1
 
   cli-cursor@3.1.0:
     dependencies:

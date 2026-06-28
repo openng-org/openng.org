@@ -41,22 +41,6 @@ themes: light --default;
 @apply mb-4 list-decimal pl-6;
 }
 
-/* Close horizontal menu dropdowns when focus and hover leave the details element */
-.navbar .menu-horizontal > li > details[open]:not(:focus-within):not(:hover) > ul {
-opacity: 0;
-scale: 95%;
-pointer-events: none;
-}
-
-.navbar .menu-horizontal > li > details[open]:not(:focus-within):not(:hover) > summary::after {
-translate: 0 -1px;
-rotate: -135deg;
-}
-
-.navbar .menu-horizontal > li > details[open]:not(:focus-within):not(:hover)::details-content {
-block-size: 0;
-}
-
 /* You can add global styles to this file, and also import other style files */
 :root {
 font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
