@@ -117,9 +117,6 @@ importers:
       '@spartan-ng/cli':
         specifier: ^1.0.2
         version: 1.0.2(@angular-devkit/core@22.0.3(chokidar@5.0.0))(@angular-devkit/schematics@22.0.3(chokidar@5.0.0))(@angular/build@22.0.3(97980271a148eff64f591fb9615907c9))(@angular/compiler@22.0.2)(@babel/traverse@7.29.7)(@rspack/core@1.6.8)(@zkochan/js-yaml@0.0.7)(chokidar@5.0.0)(esbuild@0.28.1)(eslint@10.6.0(jiti@2.7.0))(less@4.5.1)(lightningcss@1.32.0)(rxjs@7.8.2)(tslib@2.8.1)(webpack@5.105.2(esbuild@0.28.1)(lightningcss@1.32.0)(postcss@8.5.15))
-      daisyui:
-        specifier: ^5.5.23
-        version: 5.5.23
       jsdom:
         specifier: ^22.0.0
         version: 22.1.0
@@ -4099,9 +4096,6 @@ packages:
   cssstyle@3.0.0:
     resolution: {integrity: sha512-N4u2ABATi3Qplzf0hWbVCdjenim8F3ojEXpBDF5hBpjzW182MjNGLqfmQ0SkSPeQ+V86ZXgeH8aXj6kayd4jgg==}
     engines: {node: '>=14'}
-
-  daisyui@5.5.23:
-    resolution: {integrity: sha512-xuheNUSL4T6ZVtWXoioqcNkjoyGX85QTDz4HTw2aBPfqk4fuMjax5HDo8qCmpV6M1YN8bGvfx5BpYCoDeRlt+A==}
 
   data-urls@4.0.0:
     resolution: {integrity: sha512-/mMTei/JXPqvFqQtfyTowxmJVwr2PVAeCcDxyFf6LhoOu/09TX2OX3kb2wzi4DMXcfj4OItwDOnhl5oziPnT6g==}
@@ -11720,8 +11714,6 @@ snapshots:
   cssstyle@3.0.0:
     dependencies:
       rrweb-cssom: 0.6.0
-
-  daisyui@5.5.23: {}
 
   data-urls@4.0.0:
     dependencies:

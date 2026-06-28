@@ -4,9 +4,6 @@
 @import 'tailwindcss/utilities.css';
 
 @import "@spartan-ng/brain/hlm-tailwind-preset.css";
-@plugin "daisyui" {
-themes: light --default;
-}
 @import 'prismjs/themes/prism.css';
 
 @theme {
@@ -30,7 +27,7 @@ themes: light --default;
 }
 
 .blog-content a {
-@apply link link-primary;
+@apply font-medium text-primary underline-offset-4 hover:underline;
 }
 
 .blog-content ul {
