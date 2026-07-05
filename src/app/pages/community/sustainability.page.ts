@@ -10,7 +10,7 @@ export const routeMeta: RouteMeta = {
     {
       name: 'description',
       content:
-        'How the OpenNG Foundation plans for long-term maintenance through shared maintenance, sponsorship, and bounties.',
+        'How OpenNG plans for long-term maintenance through shared maintenance, sponsorship, and bounties.',
     },
   ],
 };

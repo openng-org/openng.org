@@ -10,7 +10,7 @@ export const routeMeta: RouteMeta = {
     {
       name: 'description',
       content:
-        'Open-source quality standards for Angular projects maintained by the OpenNG Foundation.',
+        'Open-source quality standards for Angular projects maintained by OpenNG.',
     },
   ],
 };

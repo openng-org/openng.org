@@ -14,7 +14,7 @@ export const routeMeta: RouteMeta = {
     {
       name: 'description',
       content:
-        'Criteria for identifying abandoned Angular open-source projects eligible for onboarding by the OpenNG Foundation.',
+        'Criteria for identifying abandoned Angular open-source projects eligible for onboarding by OpenNG.',
     },
   ],
 };

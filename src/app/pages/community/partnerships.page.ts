@@ -11,7 +11,7 @@ export const routeMeta: RouteMeta = {
     {
       name: 'description',
       content:
-        'Partner with the OpenNG Foundation to support Angular open-source maintenance, sponsorship, and community involvement.',
+        'Partner with OpenNG to support Angular open-source maintenance, sponsorship, and community involvement.',
     },
   ],
 };

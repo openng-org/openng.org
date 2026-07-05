@@ -17,7 +17,7 @@ interface Priority {
 }
 
 export const routeMeta: RouteMeta = {
-  title: 'OpenNG Foundation',
+  title: 'OpenNG',
   meta: [
     {
       name: 'description',
@@ -50,7 +50,7 @@ export const routeMeta: RouteMeta = {
         <a
           hlmBtn
           variant="ghost"
-          href="https://github.com/openng-foundation"
+          href="https://github.com/openng-org"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -157,7 +157,7 @@ export const routeMeta: RouteMeta = {
 export default class Home {
   readonly priorities: Priority[] = [
     {
-      title: 'Foundation and first cohort',
+      title: 'OpenNG and first cohort',
       description:
         'Launch this site with our mission, set up GitHub Discussions, and maintain the first cohort of six libraries.',
       link: {

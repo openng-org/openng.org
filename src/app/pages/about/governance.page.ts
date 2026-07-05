@@ -17,7 +17,7 @@ export const routeMeta: RouteMeta = {
     {
       name: 'description',
       content:
-        'How the OpenNG Foundation governs projects, onboard maintainers, and shares maintenance across the Angular community.',
+        'How OpenNG governs projects, onboard maintainers, and shares maintenance across the Angular community.',
     },
   ],
 };
@@ -183,7 +183,7 @@ export const routeMeta: RouteMeta = {
           The GitHub organization is still new, and governance details will
           evolve as we onboard the first cohort and contributors. We are
           committed to documenting how decisions are made and how people can
-          participate as the foundation grows.
+          participate as OpenNG grows.
         </p>
       </div>
 
@@ -192,7 +192,7 @@ export const routeMeta: RouteMeta = {
           Get involved
         </a>
         <a hlmBtn variant="ghost" size="sm" routerLink="/about">
-          About the foundation
+          About OpenNG
         </a>
       </div>
     </section>

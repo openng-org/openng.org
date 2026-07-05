@@ -29,7 +29,7 @@ export const routeMeta: RouteMeta = {
     {
       name: 'description',
       content:
-        'Angular open-source projects maintained or revived by the OpenNG Foundation.',
+        'Angular open-source projects maintained or revived by OpenNG.',
     },
   ],
 };
@@ -48,10 +48,10 @@ export const routeMeta: RouteMeta = {
     <app-page-hero title="Projects">
       <p class="py-4 text-muted-foreground">
         Libraries we are reviving and maintaining for the Angular community.
-        All Foundation repositories live on
+        All OpenNG repositories live on
         <a
           class="font-medium text-primary underline-offset-4 hover:underline"
-          href="https://github.com/openng-foundation"
+          href="https://github.com/openng-org"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -71,18 +71,10 @@ export const routeMeta: RouteMeta = {
           view full details.
         </p>
         <p class="text-muted-foreground leading-7">
-          As repositories move under Foundation stewardship, all Foundation
-          libraries will be published under the
-          <a
-            class="font-medium text-primary underline-offset-4 hover:underline"
-            href="https://www.npmjs.com/org/openng"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            &#64;openng
-          </a>
-          npm organization, giving the community a consistent namespace for
-          maintained Angular packages.
+          As repositories move under OpenNG stewardship, all OpenNG
+          libraries will be published under the <code>@openng</code> npm
+          organization, giving the community a consistent namespace for maintained
+          Angular packages.
         </p>
       </div>
 
@@ -224,7 +216,7 @@ export const routeMeta: RouteMeta = {
         <a
           hlmBtn
           size="sm"
-          href="https://github.com/openng-foundation"
+          href="https://github.com/openng-org"
           target="_blank"
           rel="noopener noreferrer"
         >

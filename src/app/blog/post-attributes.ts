@@ -44,6 +44,6 @@ export const postMetaResolver: ResolveFn<MetaTag[]> = (route) => {
     { name: 'description', content: post.attributes.description },
     { property: 'og:title', content: post.attributes.title },
     { property: 'og:description', content: post.attributes.description },
-    { name: 'author', content: post.attributes.author ?? 'OpenNG Foundation' },
+    { name: 'author', content: post.attributes.author ?? 'OpenNG' },
   ];
 };
