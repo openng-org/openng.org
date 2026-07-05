@@ -1,9 +1,9 @@
 ---
 title: PrimeNG is no longer open source
 slug: primeng-is-no-longer-open-source
-description: PrimeTek archived the PrimeNG repository on June 29, 2026 and is moving future major versions to a commercial license. OpenNG Foundation is considering taking the lead on a community fork of the last MIT release.
+description: PrimeTek archived the PrimeNG repository on June 29, 2026 and is moving future major versions to a commercial license. OpenNG is considering taking the lead on a community fork of the last MIT release.
 publishedAt: 2026-06-29
-author: OpenNG Foundation
+author: OpenNG
 ---
 
 PrimeTek has announced [the next chapter of its UI libraries](https://primeui.dev/nextchapter): **PrimeUI**, a unified commercial licensing model for PrimeNG, PrimeReact, and PrimeVue. The product names stay the same, but the open-source model that built PrimeNG's global adoption is changing.
@@ -46,7 +46,7 @@ A licensing shift at this scale is not a minor packaging change. It affects proc
 
 What is clear is that PrimeNG's role in the ecosystem is changing from a broadly open-source default to a commercially licensed product for its next generation.
 
-## What OpenNG Foundation is considering
+## What OpenNG is considering
 
 OpenNG exists to help the Angular open-source ecosystem when maintenance gaps appear. We have already started that work with the [first cohort of ngneat libraries](/blog/first-cohort-selected-repositories), projects where the original maintainers stepped away and the community still depended on the code.
 
@@ -54,7 +54,7 @@ PrimeNG presents a different situation. PrimeTek is not abandoning the library a
 
 With the repository archived on June 29, 2026, the **last MIT-licensed major version of PrimeNG will receive no further updates from PrimeTek** as development moves to PrimeNG 22 and beyond. Teams that want to stay on open source will need a maintained fork of that final MIT release, or they will need to move on.
 
-**OpenNG Foundation is considering taking the lead on maintaining a community fork of the last MIT-licensed version of PrimeNG.** This is not a final decision. We are evaluating whether we can host and coordinate that effort responsibly, and whether enough experienced volunteers would commit to making it viable.
+**OpenNG is considering taking the lead on maintaining a community fork of the last MIT-licensed version of PrimeNG.** This is not a final decision. We are evaluating whether we can host and coordinate that effort responsibly, and whether enough experienced volunteers would commit to making it viable.
 
 If we move forward, that would mean community-driven maintenance of the forked open-source line: security fixes, Angular compatibility updates, bug fixes, and coordinated releases, the same kind of sustained effort we are building for abandoned ngneat libraries. It is not a small undertaking. PrimeNG is a large codebase with broad surface area, and doing this well requires experienced contributors who can commit real time to the work.
 

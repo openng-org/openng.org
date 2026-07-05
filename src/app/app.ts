@@ -35,7 +35,7 @@ import { HlmSeparatorImports } from '@spartan-ng/helm/separator';
             </button>
             <hlm-drawer-content *hlmDrawerPortal>
               <hlm-drawer-header>
-                <h2 hlmDrawerTitle class="font-montserrat">OpenNG Foundation</h2>
+                <h2 hlmDrawerTitle class="font-montserrat">OpenNG</h2>
               </hlm-drawer-header>
               <nav class="flex flex-col gap-1 overflow-y-auto p-4">
                 <p class="px-2 py-1.5 text-xs font-medium text-muted-foreground">
@@ -128,7 +128,7 @@ import { HlmSeparatorImports } from '@spartan-ng/helm/separator';
               aria-hidden="true"
               class="size-8 shrink-0"
             />
-            OpenNG Foundation
+            OpenNG
           </a>
         </div>
 
@@ -217,7 +217,7 @@ import { HlmSeparatorImports } from '@spartan-ng/helm/separator';
   `,
 })
 export class App {
-  readonly githubOrgUrl = 'https://github.com/openng-foundation';
+  readonly githubOrgUrl = 'https://github.com/openng-org';
 
   readonly aboutLinks = [
     {
@@ -256,14 +256,14 @@ export class App {
       links: [
         {
           title: 'GitHub Organization',
-          href: 'https://github.com/openng-foundation',
+          href: 'https://github.com/openng-org',
           external: true,
         },
         { title: 'Get Involved', href: '/community/get-involved' },
         { title: 'Partnerships', href: '/community/partnerships' },
         {
           title: 'Code of Conduct',
-          href: 'https://github.com/openng-foundation/.github?tab=coc-ov-file',
+          href: 'https://github.com/openng-org/.github?tab=coc-ov-file',
           external: true,
         },
       ],

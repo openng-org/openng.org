@@ -11,7 +11,7 @@ export const routeMeta: RouteMeta = {
     {
       name: 'description',
       content:
-        'Get in touch with the OpenNG Foundation about maintenance, contributions, and Angular open-source projects.',
+        'Get in touch with OpenNG about maintenance, contributions, and Angular open-source projects.',
     },
   ],
 };
@@ -21,24 +21,24 @@ export const routeMeta: RouteMeta = {
   template: `
     <app-page-hero
       title="Contact Us"
-      description="Reach the people behind the OpenNG Foundation."
+      description="Reach the people behind the OpenNG initiative."
     />
 
     <section class="mx-auto flex max-w-3xl flex-col gap-10 px-4 py-12 lg:px-8">
       <div class="flex flex-col gap-4">
         <h2 class="text-2xl font-semibold">GitHub</h2>
         <p class="text-muted-foreground leading-7">
-          The OpenNG Foundation is a GitHub organization and community hub for
+          The OpenNG initiative is a GitHub organization and community hub for
           Angular open-source maintenance. GitHub is the primary place for
           issues, pull requests, and contributions on the projects we maintain.
         </p>
         <a
           class="font-medium text-primary underline-offset-4 hover:underline"
-          href="https://github.com/openng-foundation"
+          href="https://github.com/openng-org"
           target="_blank"
           rel="noopener noreferrer"
         >
-          OpenNG Foundation on GitHub
+          OpenNG on GitHub
         </a>
       </div>
 
@@ -72,7 +72,7 @@ export const routeMeta: RouteMeta = {
             </p>
           </div>
           <div hlmCardFooter class="justify-end">
-            <a hlmBtn size="sm" href="https://github.com/openng-foundation/openng.org/discussions" target="_blank" rel="noopener noreferrer">
+            <a hlmBtn size="sm" href="https://github.com/openng-org/openng.org/discussions" target="_blank" rel="noopener noreferrer">
               Suggest a project
             </a>
           </div>
@@ -85,7 +85,7 @@ export const routeMeta: RouteMeta = {
         </div>
         <div hlmCardContent>
           <p class="text-muted-foreground">
-            Our launch announcement explains why the foundation exists, what we
+            Our launch announcement explains why OpenNG exists, what we
             are not trying to do, and what comes first.
           </p>
         </div>

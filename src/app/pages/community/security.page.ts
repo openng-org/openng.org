@@ -10,7 +10,7 @@ export const routeMeta: RouteMeta = {
     {
       name: 'description',
       content:
-        'Security practices and vulnerability reporting for Angular projects maintained by the OpenNG Foundation.',
+        'Security practices and vulnerability reporting for Angular projects maintained by OpenNG.',
     },
   ],
 };

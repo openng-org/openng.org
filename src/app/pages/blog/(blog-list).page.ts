@@ -13,7 +13,7 @@ export const routeMeta: RouteMeta = {
     {
       name: 'description',
       content:
-        'News and updates from the OpenNG Foundation on Angular open-source maintenance and the community.',
+        'News and updates from OpenNG on Angular open-source maintenance and the community.',
     },
   ],
 };
@@ -29,7 +29,7 @@ export const routeMeta: RouteMeta = {
   template: `
     <app-page-hero
       title="Blog"
-      description="News and updates from the OpenNG Foundation."
+      description="News and updates from OpenNG."
     />
 
     <section class="mx-auto max-w-4xl px-4 py-12 lg:px-8">

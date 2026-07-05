@@ -20,7 +20,7 @@ export const routeMeta: RouteMeta = {
   imports: [RouterLink, HlmButtonImports, HlmCardImports, PageHeroComponent],
   template: `
     <app-page-hero
-      title="About OpenNG Foundation"
+      title="About OpenNG"
       description="A community hub for sustainable maintenance in the Angular open-source ecosystem."
     />
 
@@ -112,7 +112,7 @@ export const routeMeta: RouteMeta = {
             size="sm"
             routerLink="/blog/openng-foundation-announcement"
           >
-            Introducing the OpenNG Foundation
+            Introducing OpenNG
           </a>
           <a
             hlmBtn

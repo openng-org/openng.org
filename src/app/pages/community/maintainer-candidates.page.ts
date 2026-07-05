@@ -12,7 +12,7 @@ export const routeMeta: RouteMeta = {
     {
       name: 'description',
       content:
-        'How to apply as a maintainer for OpenNG Foundation projects, currently focused on revived, abandoned libraries.',
+        'How to apply as a maintainer for OpenNG projects, currently focused on revived, abandoned libraries.',
     },
   ],
 };
@@ -103,8 +103,8 @@ export const routeMeta: RouteMeta = {
               <span hlmBadge variant="secondary">Upcoming</span>
             </div>
             <p class="mt-3 text-muted-foreground leading-7">
-              We are not accepting brand-new library proposals yet. The
-              foundation is focused on reviving abandoned projects first. When
+              We are not accepting brand-new library proposals yet. OpenNG 
+              is focused on reviving abandoned projects first. When
               we open this path, no prior maintainer experience will be
               required, we will welcome people with ideas for libraries the
               Angular ecosystem needs.

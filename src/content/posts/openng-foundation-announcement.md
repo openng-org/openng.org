@@ -1,16 +1,16 @@
 ---
-title: Introducing the OpenNG Foundation
+title: Introducing OpenNG
 slug: openng-foundation-announcement
 description: A community hub to help the Angular open-source ecosystem with maintenance, reviving abandoned projects, and finding maintainers.
 publishedAt: 2025-06-19
-author: OpenNG Foundation
+author: OpenNG
 ---
 
 A lot of open-source projects don't fail over time because the idea was bad. They fail because maintaining them is a lonely journey, and finding a successor is incredibly difficult.
 
 We saw this recently when the ngneat organization vanished from GitHub, leaving critical tools like [ngneat/spectator](https://github.com/ngneat/spectator) and other widely used ngneat libraries missing from the Angular ecosystem. When such projects disappear overnight, the whole community feels the impact.
 
-That's why a group of Angular community members and I have teamed up to create **OpenNG Foundation**, a global organization to help the Angular OSS ecosystem.
+That's why a group of Angular community members and I have teamed up to create **OpenNG**, a global organization to help the Angular OSS ecosystem.
 
 ## What we are building
 

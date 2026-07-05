@@ -12,7 +12,7 @@ export const routeMeta: RouteMeta = {
     {
       name: 'description',
       content:
-        'Key milestones in the OpenNG Foundation story, from its creation to ongoing maintenance of Angular open-source projects.',
+        'Key milestones in OpenNG story, from its creation to ongoing maintenance of Angular open-source projects.',
     },
   ],
 };
@@ -21,8 +21,8 @@ export const routeMeta: RouteMeta = {
   imports: [PageHeroComponent, PageTimelineComponent],
   template: `
     <app-page-hero
-      title="Foundation history"
-      description="Milestones in the OpenNG Foundation story."
+      title="OpenNG history"
+      description="Milestones in OpenNG story."
     />
 
     <section class="mx-auto max-w-3xl px-4 py-12 lg:px-8">
@@ -41,9 +41,9 @@ export default class HistoryPage {
   readonly milestones: PageTimelineItem[] = [
     {
       date: 'June 18, 2025',
-      title: 'Foundation created',
+      title: 'OpenNG initiative created',
       description:
-        'A group of Angular community members launched the OpenNG Foundation as a community hub to help with maintenance across the Angular open-source ecosystem, starting with reviving abandoned projects and finding people to maintain them.',
+        'A group of Angular community members launched OpenNG as a community hub to help with maintenance across the Angular open-source ecosystem, starting with reviving abandoned projects and finding people to maintain them.',
       link: {
         label: 'Read the announcement',
         routerLink: '/blog/openng-foundation-announcement',

@@ -3,7 +3,7 @@ title: First cohort of selected repositories
 slug: first-cohort-selected-repositories
 description: OpenNG announces the first four ngneat libraries we will maintain, and how we chose them.
 publishedAt: 2026-06-20
-author: OpenNG Foundation
+author: OpenNG
 ---
 
 When the ngneat organization disappeared from GitHub, the Angular community lost more than one library. Teams across the ecosystem suddenly faced broken installs, unanswered issues, and no clear path forward for tools they had built on for years.
