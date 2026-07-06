@@ -217,7 +217,7 @@ import { HlmSeparatorImports } from '@spartan-ng/helm/separator';
   `,
 })
 export class App {
-  readonly githubOrgUrl = 'https://github.com/openng-foundation';
+  readonly githubOrgUrl = 'https://github.com/openng-org';
 
   readonly aboutLinks = [
     {
@@ -256,14 +256,14 @@ export class App {
       links: [
         {
           title: 'GitHub Organization',
-          href: 'https://github.com/openng-foundation',
+          href: 'https://github.com/openng-org',
           external: true,
         },
         { title: 'Get Involved', href: '/community/get-involved' },
         { title: 'Partnerships', href: '/community/partnerships' },
         {
           title: 'Code of Conduct',
-          href: 'https://github.com/openng-foundation/.github?tab=coc-ov-file',
+          href: 'https://github.com/openng-org/.github?tab=coc-ov-file',
           external: true,
         },
       ],

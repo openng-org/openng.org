@@ -34,7 +34,7 @@ export const routeMeta: RouteMeta = {
         </p>
         <a
           class="font-medium text-primary underline-offset-4 hover:underline"
-          href="https://github.com/openng-foundation"
+          href="https://github.com/openng-org"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -72,7 +72,7 @@ export const routeMeta: RouteMeta = {
             </p>
           </div>
           <div hlmCardFooter class="justify-end">
-            <a hlmBtn size="sm" href="https://github.com/openng-foundation/openng.org/discussions" target="_blank" rel="noopener noreferrer">
+            <a hlmBtn size="sm" href="https://github.com/openng-org/openng.org/discussions" target="_blank" rel="noopener noreferrer">
               Suggest a project
             </a>
           </div>

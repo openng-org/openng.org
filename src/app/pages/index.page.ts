@@ -50,7 +50,7 @@ export const routeMeta: RouteMeta = {
         <a
           hlmBtn
           variant="ghost"
-          href="https://github.com/openng-foundation"
+          href="https://github.com/openng-org"
           target="_blank"
           rel="noopener noreferrer"
         >

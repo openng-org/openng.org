@@ -51,7 +51,7 @@ export const routeMeta: RouteMeta = {
         All Foundation repositories live on
         <a
           class="font-medium text-primary underline-offset-4 hover:underline"
-          href="https://github.com/openng-foundation"
+          href="https://github.com/openng-org"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -224,7 +224,7 @@ export const routeMeta: RouteMeta = {
         <a
           hlmBtn
           size="sm"
-          href="https://github.com/openng-foundation"
+          href="https://github.com/openng-org"
           target="_blank"
           rel="noopener noreferrer"
         >

@@ -106,7 +106,7 @@ export const routeMeta: RouteMeta = {
           and reach out through GitHub Discussions.
           <a
             class="font-medium text-primary underline-offset-4 hover:underline"
-            href="https://github.com/openng-foundation/openng.org/discussions/new?category=abandoned-projects"
+            href="https://github.com/openng-org/openng.org/discussions/new?category=abandoned-projects"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -119,7 +119,7 @@ export const routeMeta: RouteMeta = {
         <a
           hlmBtn
           size="sm"
-          href="https://github.com/openng-foundation"
+          href="https://github.com/openng-org"
           target="_blank"
           rel="noopener noreferrer"
         >
