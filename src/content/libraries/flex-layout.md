@@ -1,5 +1,5 @@
 ---
-name: Angular Flex Layout
+name: flex-layout
 slug: flex-layout
 description: HTML UI layout for Angular applications using Flexbox and a responsive API.
 originalPackage: "@angular/flex-layout"
