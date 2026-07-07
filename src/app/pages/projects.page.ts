@@ -1,5 +1,5 @@
-import { Component, computed, signal } from '@angular/core';
-import { RouterLink } from '@angular/router';
+import { Component, computed, inject, signal } from '@angular/core';
+import { ActivatedRoute, Router, RouterLink } from '@angular/router';
 import { RouteMeta } from '@analogjs/router';
 import { HlmBadgeImports } from '@spartan-ng/helm/badge';
 import type { BadgeVariants } from '@spartan-ng/helm/badge';
@@ -241,11 +241,23 @@ export const routeMeta: RouteMeta = {
   `,
 })
 export default class ProjectsPage {
+  private readonly router = inject(Router);
+  private readonly route = inject(ActivatedRoute);
+
   readonly statuses = LIBRARY_STATUSES;
 
   readonly statusFilter = signal('all');
   readonly sorting = signal<SortingState>([]);
   readonly selectedLibrary = signal<LibraryRow | null>(null);
+
+  constructor() {
+    this.route.queryParams.subscribe(params => {
+      const status = params['status'];
+      if (status && (this.statuses.includes(status as any) || status === 'all')) {
+        this.statusFilter.set(status);
+      }
+    });
+  }
 
   readonly drawerOpen = computed(() => this.selectedLibrary() !== null);
 
@@ -310,6 +322,13 @@ export default class ProjectsPage {
   }
 
   onStatusFilterChange(value: string | null | undefined): void {
-    this.statusFilter.set(value ?? 'all');
+    const status = value ?? 'all';
+    this.statusFilter.set(status);
+    this.router.navigate([], {
+      relativeTo: this.route,
+      queryParams: { status: status === 'all' ? null : status },
+      queryParamsHandling: 'merge',
+      replaceUrl: true
+    });
   }
 }
