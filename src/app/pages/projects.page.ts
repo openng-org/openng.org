@@ -224,7 +224,7 @@ export const routeMeta: RouteMeta = {
         <a
           hlmBtn
           size="sm"
-          href="https://github.com/openng-foundation"
+          href="https://github.com/openng-org"
           target="_blank"
           rel="noopener noreferrer"
         >
