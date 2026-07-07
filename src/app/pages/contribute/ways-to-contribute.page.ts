@@ -14,7 +14,7 @@ export const routeMeta: RouteMeta = {
     {
       name: 'description',
       content:
-        'Discover the different ways you can contribute to the OpenNG Foundation, from code and documentation to community support.',
+        'Discover the different ways you can contribute to OpenNG, from code and documentation to community support.',
     },
   ],
 };

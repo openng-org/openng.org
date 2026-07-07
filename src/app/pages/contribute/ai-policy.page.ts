@@ -8,7 +8,7 @@ export const routeMeta: RouteMeta = {
     {
       name: 'description',
       content:
-        'The OpenNG Foundation policy regarding the use of AI in open-source contributions.',
+        'OpenNG policy regarding the use of AI in open-source contributions.',
     },
   ],
 };
@@ -23,7 +23,7 @@ export const routeMeta: RouteMeta = {
 
     <article class="mx-auto flex max-w-3xl flex-col gap-6 px-4 py-12 lg:px-8 prose prose-slate dark:prose-invert">
       <p class="text-muted-foreground leading-7 text-lg">
-        As the open-source ecosystem evolves with the introduction of AI-assisted tools, the OpenNG Foundation has established the following policy to ensure code quality, maintainer sanity, and a healthy community culture. This policy is inspired by and aligns with the standards set by the Godot Engine 2026 contribution guidelines.
+        As the open-source ecosystem evolves with the introduction of AI-assisted tools, OpenNG has established the following policy to ensure code quality, maintainer sanity, and a healthy community culture. This policy is inspired by and aligns with the standards set by the Godot Engine 2026 contribution guidelines.
       </p>
 
       <h2 class="text-2xl font-semibold mt-6">Our Focus</h2>
