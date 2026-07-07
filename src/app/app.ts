@@ -55,6 +55,23 @@ import { HlmSeparatorImports } from '@spartan-ng/helm/separator';
 
                 <hlm-separator class="my-2" />
 
+                <p class="px-2 py-1.5 text-xs font-medium text-muted-foreground">
+                  Contribute
+                </p>
+                @for (item of contributeLinks; track item.href) {
+                  <button
+                    hlmBtn
+                    variant="ghost"
+                    hlmDrawerClose
+                    class="h-auto w-full justify-start px-2 py-2 font-normal"
+                    [routerLink]="item.href"
+                  >
+                    {{ item.title }}
+                  </button>
+                }
+
+                <hlm-separator class="my-2" />
+
                 <button
                   hlmBtn
                   variant="ghost"
@@ -139,6 +156,27 @@ import { HlmSeparatorImports } from '@spartan-ng/helm/separator';
               <hlm-navigation-menu-content *hlmNavigationMenuPortal>
                 <ul class="grid w-80 gap-1 p-2">
                   @for (item of aboutLinks; track item.href) {
+                    <li>
+                      <a
+                        hlmNavigationMenuLink
+                        [routerLink]="item.href"
+                        class="flex flex-col items-start gap-1"
+                      >
+                        <span class="font-semibold">{{ item.title }}</span>
+                        <span class="text-sm text-muted-foreground text-wrap">
+                          {{ item.description }}
+                        </span>
+                      </a>
+                    </li>
+                  }
+                </ul>
+              </hlm-navigation-menu-content>
+            </li>
+            <li hlmNavigationMenuItem>
+              <button hlmNavigationMenuTrigger>Contribute</button>
+              <hlm-navigation-menu-content *hlmNavigationMenuPortal>
+                <ul class="grid w-80 gap-1 p-2">
+                  @for (item of contributeLinks; track item.href) {
                     <li>
                       <a
                         hlmNavigationMenuLink
@@ -248,6 +286,21 @@ export class App {
       description: 'Reach out about contributions and project proposals.',
       href: '/about/contact',
     },
+  ];
+
+  readonly contributeLinks = [
+    {
+      title: 'Ways to Contribute',
+      description: 'Find out how you can help OpenNG grow.',
+      href: '/contribute/ways-to-contribute',
+    },
+
+    {
+      title: 'AI Policy',
+      description: 'Rules for using AI in contributions.',
+      href: '/contribute/ai-policy',
+    },
+
   ];
 
   readonly communitySections = [
