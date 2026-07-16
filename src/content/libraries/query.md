@@ -4,7 +4,7 @@ slug: query
 description: TanStack Query bindings for Angular.
 originalPackage: "@ngneat/query"
 replacementPackage: "@openng/query"
-githubRepo: ngneat/query
+githubRepo: openng-org/query
 license: MIT
 status: maintained
 maintenance: active

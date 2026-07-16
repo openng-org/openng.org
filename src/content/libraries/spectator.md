@@ -4,7 +4,7 @@ slug: spectator
 description: A testing library that simplifies Angular component tests with a clean API.
 originalPackage: "@ngneat/spectator"
 replacementPackage: "@openng/spectator"
-githubRepo: ngneat/spectator
+githubRepo: openng-org/spectator
 license: MIT
 status: maintained
 maintenance: active
