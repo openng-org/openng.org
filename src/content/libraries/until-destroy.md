@@ -4,6 +4,7 @@ slug: until-destroy
 description: Automatic subscription cleanup for Angular components.
 originalPackage: "@ngneat/until-destroy"
 githubRepo: ngneat/until-destroy
+githubRepoExists: false
 license: MIT
 status: refused
 maintenance: none

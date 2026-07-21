@@ -5,6 +5,7 @@ description: HTML UI layout for Angular applications using Flexbox and a respons
 originalPackage: "@angular/flex-layout"
 replacementPackage: "@ngbracket/ngx-layout"
 githubRepo: angular/flex-layout
+newGithubRepo: ngbracket/ngx-layout
 license: MIT
 status: triaged
 maintenance: none
