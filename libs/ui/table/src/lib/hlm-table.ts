@@ -76,7 +76,9 @@ export class HlmTFoot {
 })
 export class HlmTr {
 	constructor() {
-		classes(() => 'hover:bg-muted/50 data-[state=selected]:bg-muted border-b transition-colors has-aria-expanded:bg-muted/50');
+		classes(
+			() => 'hover:bg-muted/50 data-[state=selected]:bg-muted border-b transition-colors has-aria-expanded:bg-muted/50',
+		);
 	}
 }
 
@@ -90,7 +92,10 @@ export class HlmTr {
 })
 export class HlmTh {
 	constructor() {
-		classes(() => 'text-foreground h-10 px-2 text-start align-middle font-medium whitespace-nowrap [&:has([role=checkbox])]:pe-0');
+		classes(
+			() =>
+				'text-foreground h-10 px-2 text-start align-middle font-medium whitespace-nowrap [&:has([role=checkbox])]:pe-0',
+		);
 	}
 }
 

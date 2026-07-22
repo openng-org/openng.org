@@ -28,10 +28,10 @@ export const routeMeta: RouteMeta = {
       <div class="flex flex-col gap-4">
         <h2 class="text-2xl font-semibold">Why contribute</h2>
         <p class="text-muted-foreground leading-7">
-          OpenNG exists because important Angular libraries should not
-          disappear when a single maintainer steps away. Maintenance is a
-          lonely journey, by contributing your time and expertise, you help
-          the ecosystem stay stable, secure, and up to date.
+          OpenNG exists because important Angular libraries should not disappear
+          when a single maintainer steps away. Maintenance is a lonely journey,
+          by contributing your time and expertise, you help the ecosystem stay
+          stable, secure, and up to date.
         </p>
       </div>
 
@@ -73,8 +73,8 @@ export const routeMeta: RouteMeta = {
           </div>
           <div hlmCardContent>
             <p class="text-muted-foreground">
-              Improve READMEs, migration guides, and examples so teams can
-              adopt and upgrade revived libraries with confidence.
+              Improve READMEs, migration guides, and examples so teams can adopt
+              and upgrade revived libraries with confidence.
             </p>
           </div>
         </section>
@@ -95,8 +95,7 @@ export const routeMeta: RouteMeta = {
       <div class="flex flex-col gap-4">
         <h2 class="text-2xl font-semibold">Suggest a project</h2>
         <p class="text-muted-foreground leading-7">
-          Know an unmaintained Angular library the community relies on? Read
-          our
+          Know an unmaintained Angular library the community relies on? Read our
           <a
             class="font-medium text-primary underline-offset-4 hover:underline"
             routerLink="/community/project-intake"
@@ -125,7 +124,9 @@ export const routeMeta: RouteMeta = {
         >
           OpenNG on GitHub
         </a>
-        <a hlmBtn variant="ghost" size="sm" routerLink="/projects">View projects</a>
+        <a hlmBtn variant="ghost" size="sm" routerLink="/projects"
+          >View projects</a
+        >
         <a hlmBtn variant="ghost" size="sm" routerLink="/community/standards">
           Our standards
         </a>

@@ -64,7 +64,8 @@ export const routeMeta: RouteMeta = {
       <div class="mx-auto max-w-2xl text-center">
         <h2 class="text-3xl font-semibold">Where we act</h2>
         <p class="mt-4 text-muted-foreground leading-7">
-          We step in when maintenance has stalled and the community still depends on a project.
+          We step in when maintenance has stalled and the community still
+          depends on a project.
         </p>
       </div>
 
@@ -96,7 +97,11 @@ export const routeMeta: RouteMeta = {
             </p>
           </div>
           <div hlmCardFooter>
-            <a hlmBtn variant="link" routerLink="/community/maintainer-candidates">
+            <a
+              hlmBtn
+              variant="link"
+              routerLink="/community/maintainer-candidates"
+            >
               Onboarding rules
             </a>
           </div>
@@ -125,12 +130,14 @@ export const routeMeta: RouteMeta = {
         <div class="mx-auto max-w-2xl text-center">
           <h2 class="text-3xl font-semibold">Our priorities</h2>
           <p class="mt-4 text-muted-foreground leading-7">
-            OpenNG is in an early stage, and we are building in phases. Here is what we are
-            focused on now and what comes next.
+            OpenNG is in an early stage, and we are building in phases. Here is
+            what we are focused on now and what comes next.
           </p>
         </div>
 
-        <ol class="mx-auto mt-12 flex max-w-2xl list-decimal flex-col gap-6 pl-6">
+        <ol
+          class="mx-auto mt-12 flex max-w-2xl list-decimal flex-col gap-6 pl-6"
+        >
           @for (item of priorities; track item.title) {
             <li class="ps-2">
               <h3 class="font-semibold">{{ item.title }}</h3>

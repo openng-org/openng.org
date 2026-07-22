@@ -17,12 +17,7 @@ export const routeMeta: RouteMeta = {
 };
 
 @Component({
-  imports: [
-    RouterLink,
-    HlmButtonImports,
-    HlmCardImports,
-    PageHeroComponent,
-  ],
+  imports: [RouterLink, HlmButtonImports, HlmCardImports, PageHeroComponent],
   template: `
     <app-page-hero
       title="Partnerships"
@@ -75,8 +70,8 @@ export const routeMeta: RouteMeta = {
           <div hlmCardContent>
             <p class="text-muted-foreground">
               Maintainers of at-risk or unmaintained libraries can explore
-              transferring projects to OpenNG under transparent governance
-              and shared ownership.
+              transferring projects to OpenNG under transparent governance and
+              shared ownership.
             </p>
           </div>
         </section>
@@ -98,15 +93,15 @@ export const routeMeta: RouteMeta = {
       <div class="flex flex-col gap-4">
         <h2 class="text-2xl font-semibold">How we work together</h2>
         <p class="text-muted-foreground leading-7">
-          OpenNG is still early, and formal partnership and sponsorship
-          programs are being defined alongside our governance model. We aim for
-          clear expectations on contributions, recognition, and how partners
+          OpenNG is still early, and formal partnership and sponsorship programs
+          are being defined alongside our governance model. We aim for clear
+          expectations on contributions, recognition, and how partners
           participate in decisions that affect the projects we maintain.
         </p>
         <p class="text-muted-foreground leading-7">
           Whether you represent a company, a community group, or an existing
-          open-source project, we welcome a conversation about how we can
-          align on long-term maintenance goals.
+          open-source project, we welcome a conversation about how we can align
+          on long-term maintenance goals.
         </p>
       </div>
 
@@ -129,7 +124,12 @@ export const routeMeta: RouteMeta = {
         <a hlmBtn size="sm" routerLink="/community/sustainability">
           Sustainability
         </a>
-        <a hlmBtn variant="ghost" size="sm" routerLink="/community/get-involved">
+        <a
+          hlmBtn
+          variant="ghost"
+          size="sm"
+          routerLink="/community/get-involved"
+        >
           Get involved
         </a>
       </div>

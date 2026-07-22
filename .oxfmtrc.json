@@ -1,0 +1,25 @@
+{
+  "$schema": "./node_modules/oxfmt/configuration_schema.json",
+  "singleQuote": true,
+  "semi": true,
+  "printWidth": 80,
+  "tabWidth": 2,
+  "useTabs": false,
+  "sortPackageJson": false,
+  "ignorePatterns": [".agents/**"],
+  "overrides": [
+    {
+      "files": ["libs/ui/**/*.ts"],
+      "options": {
+        "printWidth": 120,
+        "useTabs": true
+      }
+    },
+    {
+      "files": ["src/content/**/*.md"],
+      "options": {
+        "singleQuote": false
+      }
+    }
+  ]
+}

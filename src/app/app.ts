@@ -38,7 +38,9 @@ import { HlmSeparatorImports } from '@spartan-ng/helm/separator';
                 <h2 hlmDrawerTitle class="font-montserrat">OpenNG</h2>
               </hlm-drawer-header>
               <nav class="flex flex-col gap-1 overflow-y-auto p-4">
-                <p class="px-2 py-1.5 text-xs font-medium text-muted-foreground">
+                <p
+                  class="px-2 py-1.5 text-xs font-medium text-muted-foreground"
+                >
                   About
                 </p>
                 @for (item of aboutLinks; track item.href) {
@@ -55,7 +57,9 @@ import { HlmSeparatorImports } from '@spartan-ng/helm/separator';
 
                 <hlm-separator class="my-2" />
 
-                <p class="px-2 py-1.5 text-xs font-medium text-muted-foreground">
+                <p
+                  class="px-2 py-1.5 text-xs font-medium text-muted-foreground"
+                >
                   Contribute
                 </p>
                 @for (item of contributeLinks; track item.href) {
@@ -103,7 +107,9 @@ import { HlmSeparatorImports } from '@spartan-ng/helm/separator';
 
                 @for (section of communitySections; track section.title) {
                   <hlm-separator class="my-2" />
-                  <p class="px-2 py-1.5 text-xs font-medium text-muted-foreground">
+                  <p
+                    class="px-2 py-1.5 text-xs font-medium text-muted-foreground"
+                  >
                     {{ section.title }}
                   </p>
                   @for (link of section.links; track link.href) {
@@ -194,7 +200,11 @@ import { HlmSeparatorImports } from '@spartan-ng/helm/separator';
               </hlm-navigation-menu-content>
             </li>
             <li hlmNavigationMenuItem>
-              <a hlmNavigationMenuLink routerLink="/projects" class="font-semibold">
+              <a
+                hlmNavigationMenuLink
+                routerLink="/projects"
+                class="font-semibold"
+              >
                 Projects
               </a>
             </li>
@@ -208,7 +218,9 @@ import { HlmSeparatorImports } from '@spartan-ng/helm/separator';
               <hlm-navigation-menu-content *hlmNavigationMenuPortal>
                 <div class="grid w-48 gap-1 p-2">
                   @for (section of communitySections; track section.title) {
-                    <p class="px-2 py-1.5 text-xs font-medium text-muted-foreground">
+                    <p
+                      class="px-2 py-1.5 text-xs font-medium text-muted-foreground"
+                    >
                       {{ section.title }}
                     </p>
                     @for (link of section.links; track link.href) {
@@ -266,8 +278,7 @@ export class App {
     },
     {
       title: 'Governance',
-      description:
-        'How we share maintenance and onboard maintainers.',
+      description: 'How we share maintenance and onboard maintainers.',
       href: '/about/governance',
     },
     {
@@ -300,7 +311,6 @@ export class App {
       description: 'Rules for using AI in contributions.',
       href: '/contribute/ai-policy',
     },
-
   ];
 
   readonly communitySections = [
@@ -325,7 +335,10 @@ export class App {
       title: 'Programs',
       links: [
         { title: 'Project Intake', href: '/community/project-intake' },
-        { title: 'Maintainer Candidates', href: '/community/maintainer-candidates' },
+        {
+          title: 'Maintainer Candidates',
+          href: '/community/maintainer-candidates',
+        },
         { title: 'Standards', href: '/community/standards' },
         { title: 'Sustainability', href: '/community/sustainability' },
         { title: 'Security', href: '/community/security' },

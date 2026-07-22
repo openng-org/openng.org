@@ -26,9 +26,10 @@ PrimeNG went closed-source, and the GitHub repository was archived on June 28th,
 
 We created a copy of the project and regenerated the open issues/PRs. Out of 968 open issues, 58 have already been closed, and 23 triaged as still relevant and accepting contributions to resolve them. Triaging was made possible thanks to the contribution of the community.
 
-Our goal this week is to release a beta version supporting Angular 22, as people were already delaying updating their projects. 
+Our goal this week is to release a beta version supporting Angular 22, as people were already delaying updating their projects.
 
 It'll include:
+
 - a set of unreleased changes from the original repository (modernize existing components, add a few new ones)
 - `ng add` support for new projects
 - `ng update` support as unreleased changes include a few breaking changes (camelcase selectors removed, deprecated APIs removed)

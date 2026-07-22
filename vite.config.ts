@@ -54,6 +54,6 @@ export default defineConfig(({ mode }) => ({
         ],
       },
     }),
-    tailwindcss()
+    tailwindcss(),
   ],
 }));

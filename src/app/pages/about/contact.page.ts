@@ -72,7 +72,13 @@ export const routeMeta: RouteMeta = {
             </p>
           </div>
           <div hlmCardFooter class="justify-end">
-            <a hlmBtn size="sm" href="https://github.com/openng-org/openng.org/discussions" target="_blank" rel="noopener noreferrer">
+            <a
+              hlmBtn
+              size="sm"
+              href="https://github.com/openng-org/openng.org/discussions"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Suggest a project
             </a>
           </div>
@@ -85,16 +91,12 @@ export const routeMeta: RouteMeta = {
         </div>
         <div hlmCardContent>
           <p class="text-muted-foreground">
-            Our launch announcement explains why OpenNG exists, what we
-            are not trying to do, and what comes first.
+            Our launch announcement explains why OpenNG exists, what we are not
+            trying to do, and what comes first.
           </p>
         </div>
         <div hlmCardFooter>
-          <a
-            hlmBtn
-            size="sm"
-            routerLink="/blog/openng-foundation-announcement"
-          >
+          <a hlmBtn size="sm" routerLink="/blog/openng-foundation-announcement">
             Read the announcement
           </a>
         </div>

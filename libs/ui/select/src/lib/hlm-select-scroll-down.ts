@@ -10,12 +10,13 @@ import { classes } from '@spartan-ng/helm/utils';
 	providers: [provideIcons({ lucideChevronDown })],
 	changeDetection: ChangeDetectionStrategy.OnPush,
 	hostDirectives: [BrnSelectScrollDown],
-	template: `
-		<ng-icon name="lucideChevronDown" />
-	`,
+	template: ` <ng-icon name="lucideChevronDown" /> `,
 })
 export class HlmSelectScrollDown {
 	constructor() {
-		classes(() => 'bg-popover z-10 flex cursor-default items-center justify-center py-1 [&_ng-icon:not([class*=\'text-\'])]:text-[length:--spacing(4)] sticky bottom-0 w-full data-hidden:hidden');
+		classes(
+			() =>
+				"bg-popover z-10 flex cursor-default items-center justify-center py-1 [&_ng-icon:not([class*='text-'])]:text-[length:--spacing(4)] sticky bottom-0 w-full data-hidden:hidden",
+		);
 	}
 }

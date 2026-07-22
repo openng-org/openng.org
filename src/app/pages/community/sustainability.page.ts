@@ -52,9 +52,9 @@ export const routeMeta: RouteMeta = {
       <div class="flex flex-col gap-4">
         <h2 class="text-2xl font-semibold">Finding maintainers</h2>
         <p class="text-muted-foreground leading-7">
-          Sustainability starts with people. Our main focus is reviving abandoned
-          projects and connecting them with maintainers, whether experienced
-          contributors or newcomers ready to step up. See our
+          Sustainability starts with people. Our main focus is reviving
+          abandoned projects and connecting them with maintainers, whether
+          experienced contributors or newcomers ready to step up. See our
           <a
             class="font-medium text-primary underline-offset-4 hover:underline"
             routerLink="/about/governance"
@@ -81,8 +81,8 @@ export const routeMeta: RouteMeta = {
             class="font-medium text-primary underline-offset-4 hover:underline"
             routerLink="/community/partnerships"
           >
-            partnerships page
-          </a>.
+            partnerships page </a
+          >.
         </p>
       </div>
 

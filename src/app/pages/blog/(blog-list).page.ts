@@ -27,10 +27,7 @@ export const routeMeta: RouteMeta = {
     PageHeroComponent,
   ],
   template: `
-    <app-page-hero
-      title="Blog"
-      description="News and updates from OpenNG."
-    />
+    <app-page-hero title="Blog" description="News and updates from OpenNG." />
 
     <section class="mx-auto max-w-4xl px-4 py-12 lg:px-8">
       <div class="grid gap-6">

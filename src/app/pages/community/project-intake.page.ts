@@ -20,7 +20,12 @@ export const routeMeta: RouteMeta = {
 };
 
 @Component({
-  imports: [RouterLink, HlmButtonImports, PageHeroComponent, ProcessStepsComponent],
+  imports: [
+    RouterLink,
+    HlmButtonImports,
+    PageHeroComponent,
+    ProcessStepsComponent,
+  ],
   template: `
     <app-page-hero
       title="Project Intake"
@@ -41,36 +46,44 @@ export const routeMeta: RouteMeta = {
       <div class="flex flex-col gap-4">
         <h2 class="text-2xl font-semibold">Eligibility criteria</h2>
         <p class="text-muted-foreground leading-7">
-          A project must meet all of the following before we consider
-          onboarding it into the foundation:
+          A project must meet all of the following before we consider onboarding
+          it into the foundation:
         </p>
         <ul class="list-disc pl-6 text-muted-foreground leading-7">
           <li class="mb-3">
-            <span class="font-medium text-foreground">Open-source license.</span>
+            <span class="font-medium text-foreground"
+              >Open-source license.</span
+            >
             The project must be released under a recognized open-source license
             that allows community maintenance and continued distribution.
           </li>
           <li class="mb-3">
-            <span class="font-medium text-foreground">Abandoned or removed.</span>
-            The repository has had no meaningful activity for at least one
-            year, or the project has been deleted while the community still
-            relies on it.
+            <span class="font-medium text-foreground"
+              >Abandoned or removed.</span
+            >
+            The repository has had no meaningful activity for at least one year,
+            or the project has been deleted while the community still relies on
+            it.
           </li>
           <li class="mb-3">
             <span class="font-medium text-foreground">Still useful.</span>
-            The library addresses a real need that is not already covered by
-            the Angular framework itself. Where migration is required, we may
-            create schematics or guides to help teams adopt a revived version.
+            The library addresses a real need that is not already covered by the
+            Angular framework itself. Where migration is required, we may create
+            schematics or guides to help teams adopt a revived version.
           </li>
           <li class="mb-3">
-            <span class="font-medium text-foreground">No active alternative.</span>
+            <span class="font-medium text-foreground"
+              >No active alternative.</span
+            >
             There is no maintained replacement or active fork that already
             serves the same purpose for the ecosystem.
           </li>
           <li>
-            <span class="font-medium text-foreground">Enterprise relevance.</span>
-            The project must address a need in professional or enterprise Angular
-            development. A hobby or niche community tool, such as a DnD
+            <span class="font-medium text-foreground"
+              >Enterprise relevance.</span
+            >
+            The project must address a need in professional or enterprise
+            Angular development. A hobby or niche community tool, such as a DnD
             projection-creation app, may be valuable to its users but falls
             outside OpenNG's scope.
           </li>
@@ -105,7 +118,9 @@ export const routeMeta: RouteMeta = {
         <a hlmBtn size="sm" routerLink="/community/maintainer-candidates">
           Become a maintainer
         </a>
-        <a hlmBtn variant="ghost" size="sm" routerLink="/projects">View projects</a>
+        <a hlmBtn variant="ghost" size="sm" routerLink="/projects"
+          >View projects</a
+        >
       </div>
     </section>
   `,

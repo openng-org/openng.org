@@ -111,11 +111,7 @@ export const routeMeta: RouteMeta = {
               class="flex flex-col items-center gap-3 rounded-lg border border-border bg-card px-4 py-6 text-center"
             >
               <hlm-avatar class="size-20">
-                <img
-                  hlmAvatarImage
-                  [src]="person.avatar"
-                  [alt]="person.name"
-                />
+                <img hlmAvatarImage [src]="person.avatar" [alt]="person.name" />
                 <span hlmAvatarFallback>{{ initials(person.name) }}</span>
               </hlm-avatar>
               <div>
@@ -142,11 +138,7 @@ export const routeMeta: RouteMeta = {
               class="flex flex-col items-center gap-3 rounded-lg border border-border bg-card px-4 py-6 text-center"
             >
               <hlm-avatar class="size-20">
-                <img
-                  hlmAvatarImage
-                  [src]="person.avatar"
-                  [alt]="person.name"
-                />
+                <img hlmAvatarImage [src]="person.avatar" [alt]="person.name" />
                 <span hlmAvatarFallback>{{ initials(person.name) }}</span>
               </hlm-avatar>
               <div>

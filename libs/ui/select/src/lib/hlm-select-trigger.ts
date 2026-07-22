@@ -43,5 +43,7 @@ export class HlmSelectTrigger {
 	public readonly size = input<'default' | 'sm'>('default');
 
 	/** Whether to force the trigger into an invalid state. */
-	public readonly forceInvalid = input<boolean, BooleanInput>(false, { transform: booleanAttribute });
+	public readonly forceInvalid = input<boolean, BooleanInput>(false, {
+		transform: booleanAttribute,
+	});
 }
