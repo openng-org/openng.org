@@ -14,7 +14,10 @@ import { classes } from '@spartan-ng/helm/utils';
 	host: { 'data-slot': 'navigation-menu-trigger' },
 	template: `
 		<ng-content />
-		<ng-icon name="lucideChevronDown" class="relative top-px ml-1 size-3 transition duration-300 group-data-open/navigation-menu-trigger:rotate-180 group-data-popup-open/navigation-menu-trigger:rotate-180" />
+		<ng-icon
+			name="lucideChevronDown"
+			class="relative top-px ml-1 size-3 transition duration-300 group-data-open/navigation-menu-trigger:rotate-180 group-data-popup-open/navigation-menu-trigger:rotate-180"
+		/>
 	`,
 })
 export class HlmNavigationMenuTrigger {

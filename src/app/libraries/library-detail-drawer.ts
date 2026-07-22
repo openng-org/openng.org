@@ -53,20 +53,28 @@ import {
           <div class="flex flex-col gap-4 overflow-y-auto px-4 pb-4">
             <dl class="grid gap-3 text-sm">
               @if (lib.category) {
-                <div class="grid grid-cols-[minmax(0,7.5rem)_1fr] gap-x-3 gap-y-1">
+                <div
+                  class="grid grid-cols-[minmax(0,7.5rem)_1fr] gap-x-3 gap-y-1"
+                >
                   <dt class="text-muted-foreground">Category</dt>
                   <dd>{{ formatCategory(lib.category) }}</dd>
                 </div>
               }
 
               @if (lib.motivation) {
-                <div class="grid grid-cols-[minmax(0,7.5rem)_1fr] gap-x-3 gap-y-1">
+                <div
+                  class="grid grid-cols-[minmax(0,7.5rem)_1fr] gap-x-3 gap-y-1"
+                >
                   <dt class="text-muted-foreground">Motivation</dt>
-                  <dd class="text-muted-foreground leading-6">{{ lib.motivation }}</dd>
+                  <dd class="text-muted-foreground leading-6">
+                    {{ lib.motivation }}
+                  </dd>
                 </div>
               }
 
-              <div class="grid grid-cols-[minmax(0,7.5rem)_1fr] gap-x-3 gap-y-1">
+              <div
+                class="grid grid-cols-[minmax(0,7.5rem)_1fr] gap-x-3 gap-y-1"
+              >
                 <dt class="text-muted-foreground">Original package</dt>
                 <dd>
                   <a
@@ -81,7 +89,9 @@ import {
               </div>
 
               @if (lib.replacementPackage) {
-                <div class="grid grid-cols-[minmax(0,7.5rem)_1fr] gap-x-3 gap-y-1">
+                <div
+                  class="grid grid-cols-[minmax(0,7.5rem)_1fr] gap-x-3 gap-y-1"
+                >
                   <dt class="text-muted-foreground">Replacement</dt>
                   <dd>
                     <a
@@ -97,7 +107,9 @@ import {
               }
 
               @if (lib.replacementNote) {
-                <div class="grid grid-cols-[minmax(0,7.5rem)_1fr] gap-x-3 gap-y-1">
+                <div
+                  class="grid grid-cols-[minmax(0,7.5rem)_1fr] gap-x-3 gap-y-1"
+                >
                   <dt class="text-muted-foreground">Migration</dt>
                   <dd>
                     @if (lib.replacementUrl) {
@@ -117,7 +129,9 @@ import {
               }
 
               @if (lib.license) {
-                <div class="grid grid-cols-[minmax(0,7.5rem)_1fr] gap-x-3 gap-y-1">
+                <div
+                  class="grid grid-cols-[minmax(0,7.5rem)_1fr] gap-x-3 gap-y-1"
+                >
                   <dt class="text-muted-foreground">License</dt>
                   <dd>
                     @if (licenseUrl(lib.license); as url) {
@@ -137,7 +151,9 @@ import {
               }
 
               @if (lib.githubRepo) {
-                <div class="grid grid-cols-[minmax(0,7.5rem)_1fr] gap-x-3 gap-y-1">
+                <div
+                  class="grid grid-cols-[minmax(0,7.5rem)_1fr] gap-x-3 gap-y-1"
+                >
                   <dt class="text-muted-foreground">Repository</dt>
                   <dd>
                     <a
@@ -153,7 +169,9 @@ import {
               }
 
               @if (lib.newGithubRepo) {
-                <div class="grid grid-cols-[minmax(0,7.5rem)_1fr] gap-x-3 gap-y-1">
+                <div
+                  class="grid grid-cols-[minmax(0,7.5rem)_1fr] gap-x-3 gap-y-1"
+                >
                   <dt class="text-muted-foreground">OpenNG repo</dt>
                   <dd>
                     <a
@@ -169,14 +187,18 @@ import {
               }
 
               @if (lib.supportedAngularVersions) {
-                <div class="grid grid-cols-[minmax(0,7.5rem)_1fr] gap-x-3 gap-y-1">
+                <div
+                  class="grid grid-cols-[minmax(0,7.5rem)_1fr] gap-x-3 gap-y-1"
+                >
                   <dt class="text-muted-foreground">Angular support</dt>
                   <dd>{{ lib.supportedAngularVersions }}</dd>
                 </div>
               }
 
               @if (lib.triagedAt) {
-                <div class="grid grid-cols-[minmax(0,7.5rem)_1fr] gap-x-3 gap-y-1">
+                <div
+                  class="grid grid-cols-[minmax(0,7.5rem)_1fr] gap-x-3 gap-y-1"
+                >
                   <dt class="text-muted-foreground">Triaged</dt>
                   <dd>{{ lib.triagedAt | date: 'longDate' }}</dd>
                 </div>
@@ -194,11 +216,19 @@ import {
 
           <hlm-drawer-footer>
             @if (githubUrl(lib); as url) {
-              <a hlmBtn size="sm" [href]="url" target="_blank" rel="noopener noreferrer">
+              <a
+                hlmBtn
+                size="sm"
+                [href]="url"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 View on GitHub
               </a>
             }
-            <button hlmBtn variant="outline" size="sm" hlmDrawerClose>Close</button>
+            <button hlmBtn variant="outline" size="sm" hlmDrawerClose>
+              Close
+            </button>
           </hlm-drawer-footer>
         }
       </hlm-drawer-content>

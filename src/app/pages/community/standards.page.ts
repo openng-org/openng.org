@@ -56,8 +56,8 @@ export const routeMeta: RouteMeta = {
       <div class="flex flex-col gap-4">
         <h2 class="text-2xl font-semibold">Licensing</h2>
         <p class="text-muted-foreground leading-7">
-          Projects under OpenNG maintenance remain open source.
-          New projects should be released under an open-source license.
+          Projects under OpenNG maintenance remain open source. New projects
+          should be released under an open-source license.
         </p>
       </div>
 

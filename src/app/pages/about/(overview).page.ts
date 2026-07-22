@@ -84,10 +84,13 @@ export const routeMeta: RouteMeta = {
             </a>
             of selected ngneat repositories
           </li>
-          <li class="mb-3">Keep evaluating other abandoned Angular projects beyond the first cohort</li>
           <li class="mb-3">
-            Help the wider ecosystem, promoting quality projects and
-            connecting them with contributors and maintainers
+            Keep evaluating other abandoned Angular projects beyond the first
+            cohort
+          </li>
+          <li class="mb-3">
+            Help the wider ecosystem, promoting quality projects and connecting
+            them with contributors and maintainers
           </li>
           <li>
             Attract sponsors to cover governance costs and fund maintenance
@@ -102,16 +105,11 @@ export const routeMeta: RouteMeta = {
         </div>
         <div hlmCardContent>
           <p class="text-muted-foreground">
-            Learn more about how the foundation got started and what comes
-            next.
+            Learn more about how the foundation got started and what comes next.
           </p>
         </div>
         <div hlmCardFooter class="gap-2">
-          <a
-            hlmBtn
-            size="sm"
-            routerLink="/blog/openng-foundation-announcement"
-          >
+          <a hlmBtn size="sm" routerLink="/blog/openng-foundation-announcement">
             Introducing OpenNG
           </a>
           <a

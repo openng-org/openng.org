@@ -28,8 +28,7 @@ export const routeMeta: RouteMeta = {
   meta: [
     {
       name: 'description',
-      content:
-        'Angular open-source projects maintained or revived by OpenNG.',
+      content: 'Angular open-source projects maintained or revived by OpenNG.',
     },
   ],
 };
@@ -47,16 +46,16 @@ export const routeMeta: RouteMeta = {
   template: `
     <app-page-hero title="Projects">
       <p class="py-4 text-muted-foreground">
-        Libraries we are reviving and maintaining for the Angular community.
-        All OpenNG repositories live on
+        Libraries we are reviving and maintaining for the Angular community. All
+        OpenNG repositories live on
         <a
           class="font-medium text-primary underline-offset-4 hover:underline"
           href="https://github.com/openng-org"
           target="_blank"
           rel="noopener noreferrer"
         >
-          GitHub
-        </a>.
+          GitHub </a
+        >.
       </p>
     </app-page-hero>
 
@@ -71,16 +70,18 @@ export const routeMeta: RouteMeta = {
           view full details.
         </p>
         <p class="text-muted-foreground leading-7">
-          As repositories move under OpenNG stewardship, all OpenNG
-          libraries will be published under the <code>@openng</code> npm
-          organization, giving the community a consistent namespace for maintained
-          Angular packages.
+          As repositories move under OpenNG stewardship, all OpenNG libraries
+          will be published under the
+          <code>@openng</code> npm organization, giving the community a
+          consistent namespace for maintained Angular packages.
         </p>
       </div>
 
       <div class="flex flex-col gap-4">
         <div class="flex w-fit flex-col gap-1.5 text-sm">
-          <label class="font-medium" for="status-filter">Filter by status</label>
+          <label class="font-medium" for="status-filter"
+            >Filter by status</label
+          >
           <hlm-select
             class="w-52"
             [value]="statusFilter()"
@@ -93,7 +94,9 @@ export const routeMeta: RouteMeta = {
               <hlm-select-group>
                 <hlm-select-item value="all">All statuses</hlm-select-item>
                 @for (status of statuses; track status) {
-                  <hlm-select-item [value]="status">{{ status }}</hlm-select-item>
+                  <hlm-select-item [value]="status">{{
+                    status
+                  }}</hlm-select-item>
                 }
               </hlm-select-group>
             </hlm-select-content>
@@ -104,14 +107,19 @@ export const routeMeta: RouteMeta = {
           <div hlmTableContainer>
             <table hlmTable>
               <thead hlmTableHeader>
-                @for (headerGroup of table().getHeaderGroups(); track headerGroup.id) {
+                @for (
+                  headerGroup of table().getHeaderGroups();
+                  track headerGroup.id
+                ) {
                   <tr hlmTableRow>
                     @for (header of headerGroup.headers; track header.id) {
                       <th
                         hlmTableHead
                         [class.cursor-pointer]="header.column.getCanSort()"
                         [class.select-none]="header.column.getCanSort()"
-                        (click)="header.column.getToggleSortingHandler()?.($event)"
+                        (click)="
+                          header.column.getToggleSortingHandler()?.($event)
+                        "
                       >
                         @if (header.isPlaceholder) {
                         } @else {
@@ -119,7 +127,9 @@ export const routeMeta: RouteMeta = {
                             {{ header.column.columnDef.header }}
                             @if (header.column.getIsSorted() === 'asc') {
                               <span aria-hidden="true">↑</span>
-                            } @else if (header.column.getIsSorted() === 'desc') {
+                            } @else if (
+                              header.column.getIsSorted() === 'desc'
+                            ) {
                               <span aria-hidden="true">↓</span>
                             }
                           </span>
@@ -147,7 +157,9 @@ export const routeMeta: RouteMeta = {
                       <td hlmTableCell>
                         @switch (cell.column.id) {
                           @case ('name') {
-                            <span class="font-medium">{{ cell.getValue() }}</span>
+                            <span class="font-medium">{{
+                              cell.getValue()
+                            }}</span>
                           }
                           @case ('originalPackage') {
                             <code class="text-sm">{{ cell.getValue() }}</code>
@@ -207,8 +219,8 @@ export const routeMeta: RouteMeta = {
             class="font-medium text-primary underline-offset-4 hover:underline"
             routerLink="/about/contact"
           >
-            get in touch
-          </a>.
+            get in touch </a
+          >.
         </p>
       </div>
 
@@ -222,7 +234,12 @@ export const routeMeta: RouteMeta = {
         >
           OpenNG on GitHub
         </a>
-        <a hlmBtn variant="ghost" size="sm" routerLink="/community/get-involved">
+        <a
+          hlmBtn
+          variant="ghost"
+          size="sm"
+          routerLink="/community/get-involved"
+        >
           Get involved
         </a>
         <a hlmBtn variant="ghost" size="sm" routerLink="/about/governance">
@@ -243,9 +260,12 @@ export default class ProjectsPage {
   readonly selectedLibrary = signal<LibraryRow | null>(null);
 
   constructor() {
-    this.route.queryParams.subscribe(params => {
+    this.route.queryParams.subscribe((params) => {
       const status = params['status'];
-      if (status && (this.statuses.includes(status as any) || status === 'all')) {
+      if (
+        status &&
+        (this.statuses.includes(status as any) || status === 'all')
+      ) {
         this.statusFilter.set(status);
       }
     });
@@ -276,8 +296,7 @@ export default class ProjectsPage {
     {
       id: 'replacement',
       header: 'Replacement',
-      accessorFn: (row) =>
-        row.replacementPackage ?? row.replacementNote ?? '—',
+      accessorFn: (row) => row.replacementPackage ?? row.replacementNote ?? '—',
     },
     {
       accessorKey: 'status',
@@ -320,7 +339,7 @@ export default class ProjectsPage {
       relativeTo: this.route,
       queryParams: { status: status === 'all' ? null : status },
       queryParamsHandling: 'merge',
-      replaceUrl: true
+      replaceUrl: true,
     });
   }
 }

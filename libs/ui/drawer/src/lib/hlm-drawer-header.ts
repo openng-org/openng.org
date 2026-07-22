@@ -7,6 +7,9 @@ import { classes } from '@spartan-ng/helm/utils';
 })
 export class HlmDrawerHeader {
 	constructor() {
-		classes(() => 'gap-0.5 p-4 group-data-[vaul-drawer-direction=bottom]/drawer-content:text-center group-data-[vaul-drawer-direction=top]/drawer-content:text-center md:gap-1.5 md:text-start flex flex-col');
+		classes(
+			() =>
+				'gap-0.5 p-4 group-data-[vaul-drawer-direction=bottom]/drawer-content:text-center group-data-[vaul-drawer-direction=top]/drawer-content:text-center md:gap-1.5 md:text-start flex flex-col',
+		);
 	}
 }

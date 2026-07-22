@@ -27,10 +27,10 @@ export const routeMeta: RouteMeta = {
 
     <section class="mx-auto max-w-3xl px-4 py-12 lg:px-8">
       <p class="mb-10 text-muted-foreground leading-7">
-        The idea for a global organization to help the Angular OSS ecosystem
-        had been forming for a while. The disappearance of the ngneat
-        organization from GitHub, and the impact on widely used libraries
-        across the ecosystem, was the trigger to make it happen.
+        The idea for a global organization to help the Angular OSS ecosystem had
+        been forming for a while. The disappearance of the ngneat organization
+        from GitHub, and the impact on widely used libraries across the
+        ecosystem, was the trigger to make it happen.
       </p>
 
       <app-page-timeline [items]="milestones" />
