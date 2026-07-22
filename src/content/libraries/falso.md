@@ -4,6 +4,7 @@ slug: falso
 description: Fake data generation for tests and development.
 originalPackage: "@ngneat/falso"
 githubRepo: ngneat/falso
+githubRepoExists: false
 license: MIT
 status: refused
 maintenance: none

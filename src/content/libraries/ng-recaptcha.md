@@ -5,6 +5,7 @@ description: Angular component for Google reCAPTCHA v2 and v3.
 originalPackage: ng-recaptcha
 replacementPackage: ng-recaptcha-2
 githubRepo: DethAriel/ng-recaptcha
+newGithubRepo: LakhveerChahal/ng-recaptcha-2
 license: MIT
 status: triaged
 maintenance: none

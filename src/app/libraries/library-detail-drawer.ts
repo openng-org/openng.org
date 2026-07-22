@@ -140,21 +140,25 @@ import {
                 <div class="grid grid-cols-[minmax(0,7.5rem)_1fr] gap-x-3 gap-y-1">
                   <dt class="text-muted-foreground">Repository</dt>
                   <dd>
-                    <a
-                      class="text-primary underline-offset-4 hover:underline"
-                      [href]="originalGithubUrl(lib)"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
+                    @if (originalGithubUrl(lib); as url) {
+                      <a
+                        class="text-primary underline-offset-4 hover:underline"
+                        [href]="url"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        {{ lib.githubRepo }}
+                      </a>
+                    } @else {
                       {{ lib.githubRepo }}
-                    </a>
+                    }
                   </dd>
                 </div>
               }
 
               @if (lib.newGithubRepo) {
                 <div class="grid grid-cols-[minmax(0,7.5rem)_1fr] gap-x-3 gap-y-1">
-                  <dt class="text-muted-foreground">OpenNG repo</dt>
+                  <dt class="text-muted-foreground">New repository</dt>
                   <dd>
                     <a
                       class="text-primary underline-offset-4 hover:underline"

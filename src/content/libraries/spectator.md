@@ -5,6 +5,8 @@ description: A testing library that simplifies Angular component tests with a cl
 originalPackage: "@ngneat/spectator"
 replacementPackage: "@openng/spectator"
 githubRepo: ngneat/spectator
+githubRepoExists: false
+newGithubRepo: openng-org/spectator
 license: MIT
 status: maintained
 maintenance: active

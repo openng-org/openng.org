@@ -20,6 +20,7 @@ export interface LibraryAttributes {
   status: LibraryStatus;
   maintenance?: LibraryMaintenance;
   githubRepo?: string;
+  githubRepoExists?: boolean;
   newGithubRepo?: string;
   category?: string;
   triagedAt?: string;
@@ -74,12 +75,16 @@ export function injectLibraries(): LibraryRow[] {
 }
 
 export function githubUrl(library: LibraryRow): string | null {
-  const repo = library.newGithubRepo ?? library.githubRepo;
+  const repo =
+    library.newGithubRepo ??
+    (library.githubRepoExists !== false ? library.githubRepo : undefined);
   return repo ? `https://github.com/${repo}` : null;
 }
 
 export function originalGithubUrl(library: LibraryRow): string | null {
-  return library.githubRepo ? `https://github.com/${library.githubRepo}` : null;
+  return library.githubRepo && library.githubRepoExists !== false
+    ? `https://github.com/${library.githubRepo}`
+    : null;
 }
 
 export function npmPackageUrl(packageName: string): string {
