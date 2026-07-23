@@ -6,7 +6,7 @@ originalPackage: "@ngneat/until-destroy"
 githubRepo: ngneat/until-destroy
 githubRepoExists: false
 license: MIT
-status: refused
+status: declined
 maintenance: none
 category: dev-tools
 motivation: The ngneat GitHub organization and this repository were removed from GitHub.

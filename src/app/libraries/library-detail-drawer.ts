@@ -98,7 +98,7 @@ import {
 
               @if (lib.replacementNote) {
                 <div class="grid grid-cols-[minmax(0,7.5rem)_1fr] gap-x-3 gap-y-1">
-                  <dt class="text-muted-foreground">Migration</dt>
+                  <dt class="text-muted-foreground">Replacement note</dt>
                   <dd>
                     @if (lib.replacementUrl) {
                       <a
@@ -172,12 +172,6 @@ import {
                 </div>
               }
 
-              @if (lib.supportedAngularVersions) {
-                <div class="grid grid-cols-[minmax(0,7.5rem)_1fr] gap-x-3 gap-y-1">
-                  <dt class="text-muted-foreground">Angular support</dt>
-                  <dd>{{ lib.supportedAngularVersions }}</dd>
-                </div>
-              }
 
               @if (lib.triagedAt) {
                 <div class="grid grid-cols-[minmax(0,7.5rem)_1fr] gap-x-3 gap-y-1">

@@ -4,11 +4,12 @@ slug: cashew
 description: HTTP caching for Angular applications.
 originalPackage: "@ngneat/cashew"
 replacementPackage: "@openng/cashew"
+replacementPackageExists: false
 githubRepo: ngneat/cashew
 githubRepoExists: false
 newGithubRepo: openng-org/cashew
 license: MIT
-status: maintained
+status: accepted
 maintenance: active
 category: http
 motivation: The ngneat GitHub organization and this repository were removed from GitHub.

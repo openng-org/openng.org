@@ -10,5 +10,6 @@ maintenance: none
 category: ui
 motivation: The repository has been archived by its maintainer.
 triagedAt: 2026-06-28
+replacementNote: "Under review — upstream archived"
 notes: Widely used toast library for Angular. The maintainer archived the repository; under OpenNG intake review for possible revival.
 ---

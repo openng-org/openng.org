@@ -10,5 +10,6 @@ maintenance: none
 category: routing
 motivation: The repository has been archived by its maintainer.
 triagedAt: 2026-06-28
+replacementNote: "Under review — deprecated upstream"
 notes: Deprecated by the maintainer, who is no longer able to support the library. Fork of localize-router; integrates with ngx-translate to translate route paths and prefixes URLs with locale codes. Under OpenNG intake review for possible revival.
 ---

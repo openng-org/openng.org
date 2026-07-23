@@ -15,6 +15,7 @@ import {
 } from '@tanstack/angular-table';
 import { PageHeroComponent } from '../components/page-hero';
 import { LibraryDetailDrawerComponent } from '../libraries/library-detail-drawer';
+import { LibraryResourceLinksComponent } from '../libraries/library-resource-links';
 import {
   injectLibraries,
   LIBRARY_STATUSES,
@@ -42,6 +43,7 @@ export const routeMeta: RouteMeta = {
     HlmSelectImports,
     HlmTableImports,
     LibraryDetailDrawerComponent,
+    LibraryResourceLinksComponent,
     PageHeroComponent,
   ],
   template: `
@@ -150,10 +152,16 @@ export const routeMeta: RouteMeta = {
                             <span class="font-medium">{{ cell.getValue() }}</span>
                           }
                           @case ('originalPackage') {
-                            <code class="text-sm">{{ cell.getValue() }}</code>
+                            <app-library-resource-links
+                              [library]="row.original"
+                              variant="original"
+                            />
                           }
                           @case ('replacement') {
-                            <span class="text-sm">{{ cell.getValue() }}</span>
+                            <app-library-resource-links
+                              [library]="row.original"
+                              variant="replacement"
+                            />
                           }
                           @case ('status') {
                             <span
@@ -257,10 +265,15 @@ export default class ProjectsPage {
 
   readonly filteredLibraries = computed(() => {
     const filter = this.statusFilter();
-    if (filter === 'all') {
-      return this.libraries;
-    }
-    return this.libraries.filter((lib) => lib.status === filter);
+    const libraries =
+      filter === 'all'
+        ? this.libraries
+        : this.libraries.filter((lib) => lib.status === filter);
+    return [...libraries].sort(
+      (a, b) =>
+        LIBRARY_STATUSES.indexOf(a.status) -
+          LIBRARY_STATUSES.indexOf(b.status) || a.name.localeCompare(b.name),
+    );
   });
 
   readonly columns: ColumnDef<LibraryRow>[] = [

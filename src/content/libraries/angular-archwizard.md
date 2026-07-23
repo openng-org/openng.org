@@ -10,5 +10,6 @@ maintenance: none
 category: ui
 motivation: Maintenance has stalled with many open issues and pull requests.
 triagedAt: 2026-06-28
+replacementNote: "Under review"
 notes: Provides a wizard component for Angular 9 and later. Under OpenNG intake review for possible revival.
 ---

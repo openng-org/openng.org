@@ -4,11 +4,12 @@ slug: elf
 description: A reactive, immutable state management library.
 originalPackage: "@ngneat/elf"
 replacementPackage: "@openng/elf"
+replacementPackageExists: false
 githubRepo: ngneat/elf
 githubRepoExists: false
 newGithubRepo: openng-org/elf
 license: MIT
-status: maintained
+status: accepted
 maintenance: active
 category: state-management
 motivation: The ngneat GitHub organization and this repository were removed from GitHub.
